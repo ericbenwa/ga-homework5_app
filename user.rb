@@ -17,8 +17,9 @@ class User
 		"#{@first_name} #{@last_name}"
 	end
 
-	def eat(name) # Confused on what the question is trying to ask for what it takes.
-		puts "Eating noise is #{noise} for #{name}."
+	def eat(@name) # Confused on what the question is trying to ask for what it takes.
+		# puts "Eating noise is #{noise} for #{name}."
+		puts @noise
 		@eaten = true
 		@meals_eaten += 1
 	end
