@@ -17,10 +17,14 @@ class User
 		"#{@first_name} #{@last_name}"
 	end
 
-	def eat(@name) # Confused on what the question is trying to ask for what it takes.
+	def eat(test)
 		# puts "Eating noise is #{noise} for #{name}."
-		puts @noise
-		@eaten = true
+		puts "putting name and noise here"
+		puts "#{@name}"
+		test.noise = "nom nom"
+		puts test.noise
+		puts "-------"
+		test.eaten = true
 		@meals_eaten += 1
 	end
 end
